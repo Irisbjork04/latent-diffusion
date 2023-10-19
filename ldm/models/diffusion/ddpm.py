@@ -6,6 +6,8 @@ https://github.com/CompVis/taming-transformers
 -- merci
 """
 
+# ÍBS: Denoising Diffusion Probabilistic Models
+
 import torch
 import torch.nn as nn
 import numpy as np
@@ -20,7 +22,7 @@ from torchvision.utils import make_grid
 # from pytorch_lightning.utilities.distributed import rank_zero_only #ÍBS changed this line
 from pytorch_lightning.utilities.rank_zero import rank_zero_only
 
-
+# ÍBS Add here import for the new conditioning class?
 from ldm.util import (
     log_txt_as_img,
     exists,
