@@ -8,10 +8,10 @@ model:
     log_every_t: 200
     timesteps: 1000
     first_stage_key: image
-    cond_stage_key: class_label
+    cond_stage_key: segmentation
     image_size: 64
     channels: 3
-    cond_stage_trainable: false
+    cond_stage_trainable: true
     concat_mode: false
     monitor: val/loss
     unet_config:

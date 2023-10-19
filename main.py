@@ -140,7 +140,7 @@ class WrappedDataset(Dataset):
         return len(self.data)
 
     def __getitem__(self, idx):
-        return self.data[idx]
+        return self.data[idx] #ÍBS: With this index I can construct the getitem myself -> read in csv file -> each row is the image -> age label as well -> randomly select one row. 
 
 
 def worker_init_fn(_):
